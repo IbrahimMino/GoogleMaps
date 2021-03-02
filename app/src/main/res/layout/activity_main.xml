@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3CF08A">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Maps Location"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        />
+
+   <EditText
+       android:id="@+id/edt_sourse"
+       android:layout_centerInParent="true"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:hint="Enter a Source Location"
+       android:paddingStart="15dp"
+       android:background="@drawable/edit_thema"/>
+
+    <EditText
+        android:id="@+id/edt_destionation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+      android:layout_margin="20dp"
+        android:layout_below="@id/edt_sourse"
+        android:background="@drawable/edit_thema"
+        android:paddingStart="15dp"
+        android:hint="Enter a Destionation Location"
+        />
+
+ <com.google.android.material.button.MaterialButton
+     android:id="@+id/btn_go"
+     android:layout_width="200dp"
+     android:layout_height="50dp"
+     app:cornerRadius="30dp"
+     android:text="Let's Go"
+     android:textAllCaps="false"
+     android:layout_below="@id/edt_destionation"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="40dp"
+     android:backgroundTint="#5F52EE"
+     app:strokeWidth="2dp"
+     app:strokeColor="@color/white"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/location_moment"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_gps"
+        />
+
+</RelativeLayout>
